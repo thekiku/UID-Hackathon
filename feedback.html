@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback - Campus Sports Meet 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Campus Sports Meet 2026</h1>
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="sports.html">Sports Events</a></li>
+
+<li><a href="feedback.html">Feedback</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main class="container">
+
+<section class="card">
+
+<h2>Feedback Form</h2>
+
+<form id="feedbackForm">
+
+<input type="text" id="fbName" placeholder="Student Name">
+
+<input type="text" id="fbRegNo" placeholder="Registration Number">
+
+<select id="fbEvent">
+
+<option value="">Select Event Attended</option>
+
+<option value="Cricket">Cricket</option>
+
+<option value="Football">Football</option>
+
+<option value="Badminton">Badminton</option>
+
+<option value="Chess">Chess</option>
+
+<option value="Volleyball">Volleyball</option>
+
+</select>
+
+<select id="rating">
+
+<option value="">Select Rating</option>
+
+<option value="1">1</option>
+
+<option value="2">2</option>
+
+<option value="3">3</option>
+
+<option value="4">4</option>
+
+<option value="5">5</option>
+
+</select>
+
+<textarea id="comments" placeholder="Enter Comments"></textarea>
+
+<button type="submit">Submit Feedback</button>
+
+<p id="feedbackMessage"></p>
+
+</form>
+
+<div id="feedbackSummary"></div>
+
+<h3>Average Rating:
+<span id="averageRating">0</span>
+</h3>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>Department of Physical Education</p>
+
+<p>Email: sports@college.edu | Phone: +91 9876543210</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

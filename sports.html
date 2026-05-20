@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Events - Campus Sports Meet 2026</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Campus Sports Meet 2026</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports Events</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Sports Event Details</h2>
+
+            <div class="grid-container">
+
+                <div class="event-card">
+                    <img src="images/sports-event-images/cricket.jpg" alt="Cricket">
+                    <h3>Cricket</h3>
+                    <p><strong>Event ID:</strong> E101</p>
+                    <p><strong>Category:</strong> Team</p>
+                    <p><strong>Date:</strong> 20 March 2026 - 9:00 AM</p>
+                    <p><strong>Venue:</strong> Main Ground</p>
+                    <p><strong>Fee:</strong> ₹300</p>
+                    <p><strong>Status:</strong> Open</p>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/sports-event-images/football.jpg" alt="Football">
+                    <h3>Football</h3>
+                    <p><strong>Event ID:</strong> E102</p>
+                    <p><strong>Category:</strong> Team</p>
+                    <p><strong>Date:</strong> 21 March 2026 - 10:00 AM</p>
+                    <p><strong>Venue:</strong> Football Field</p>
+                    <p><strong>Fee:</strong> ₹250</p>
+                    <p><strong>Status:</strong> Open</p>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/sports-event-images/badminton.jpg" alt="Badminton">
+                    <h3>Badminton</h3>
+                    <p><strong>Event ID:</strong> E103</p>
+                    <p><strong>Category:</strong> Individual</p>
+                    <p><strong>Date:</strong> 22 March 2026 - 11:00 AM</p>
+                    <p><strong>Venue:</strong> Indoor Stadium</p>
+                    <p><strong>Fee:</strong> ₹100</p>
+                    <p><strong>Status:</strong> Closed</p>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/sports-event-images/chess.jpg" alt="Chess">
+                    <h3>Chess</h3>
+                    <p><strong>Event ID:</strong> E104</p>
+                    <p><strong>Category:</strong> Individual</p>
+                    <p><strong>Date:</strong> 23 March 2026 - 1:00 PM</p>
+                    <p><strong>Venue:</strong> Seminar Hall</p>
+                    <p><strong>Fee:</strong> ₹50</p>
+                    <p><strong>Status:</strong> Open</p>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/sports-event-images/volleyball.jpg" alt="Volleyball">
+                    <h3>Volleyball</h3>
+                    <p><strong>Event ID:</strong> E105</p>
+                    <p><strong>Category:</strong> Team</p>
+                    <p><strong>Date:</strong> 24 March 2026 - 2:00 PM</p>
+                    <p><strong>Venue:</strong> Volleyball Court</p>
+                    <p><strong>Fee:</strong> ₹200</p>
+                    <p><strong>Status:</strong> Open</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Student Participation Form</h2>
+
+            <form id="sportsForm">
+
+                <input type="text" id="studentName" placeholder="Student Name" />
+                <input type="text" id="regNo" placeholder="Registration Number" />
+                <input type="email" id="email" placeholder="Email ID" />
+                <input type="text" id="mobile" placeholder="Mobile Number" />
+                <input type="text" id="department" placeholder="Department" />
+                <input type="number" id="year" placeholder="Year of Study" min="1" max="4" />
+
+                <select id="eventSelect">
+                    <option value="">Select Event</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Chess">Chess</option>
+                    <option value="Volleyball">Volleyball</option>
+                </select>
+
+                <select id="participationType">
+                    <option value="">Participation Type</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Team">Team</option>
+                </select>
+
+                <input type="text" id="teamName" placeholder="Team Name" />
+                <input type="number" id="teamMembers" placeholder="Number of Team Members" />
+
+                <button type="submit">Register</button>
+
+                <p id="sportsMessage"></p>
+            </form>
+
+            <div id="participantDisplay"></div>
+
+            <h3>Total Participants: <span id="participantCount">0</span></h3>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Department of Physical Education</p>
+        <p>Email: sports@college.edu | Phone: +91 9876543210</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
